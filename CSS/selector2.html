@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selector</title>
+    <style>
+        #main p{
+            color: aqua;
+        }
+        #inside p{
+            background-color: blue;
+        }
+        #main > p{
+            background-color: yellow;
+        }
+        /* #main + p{
+        background-color: blueviolet}*/
+        #main ~ p{
+        background-color: blueviolet;
+    }
+    /* style for special state of an element */
+    a:link{
+        text-decoration: none; font-size:20x;
+        a:hover{
+            color: chartreuse; font: size 25px;
+        }
+        a:active{
+            color:cornflowerblue;
+        }
+
+        #main.odd{
+            color: red;
+        }
+        #main p:nth-child(even){
+            color:blue
+        }
+    }
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <!--css combinators-->
+        <div id="main"><!--div first-->
+        <p>
+            lorem ipsum dolor sit amet consectetur adipiscing elit.
+bdfu bgdug gufgiuw hjbhu hdhuiwkuidc kishfkw jdkbk.Superconductors are materials that exhibit zero electrical resistance and expel magnetic fields when cooled below a specific "critical temperature". This allows electric current to flow indefinitely without energy loss. Common applications include MRI machines, maglev trains, and high-field magnets for fusion research. 
+        </p>
+        <p>
+                     lorem ipsum dolor sit amet consectetur adipiscing elit.
+bdfu bgdug gufgiuw hjbhu hdhuiwkuidc kishfkw jdkbk.Superconductors are materials that exhibit zero electrical resistance and expel magnetic fields when cooled below a specific "critical temperature". This allows electric current to flow indefinitely without energy loss. Common applications include MRI machines, maglev trains, and high-field magnets for fusion resear
+        </p>
+        <p> 
+            ew concepts in the field of superconductivity extend beyond the traditional BCS theory and focus on novel material classes, alternative pairing mechanisms, and the use of advanced computational methods like artificial intelligence (AI) to accelerate discovery. 
+        </p>
+        <p>
+             focus on novel material classes, alternative pairing mechanisms, and the use of advanced computational method
+        </p>
+        <div><!--inside first -->
+            <p>
+                lorem ipsum dolor sit amit consecuter adipiscing elit.
+
+            </p>
+        </div><!--inside first end-->
+    </div><!--div first end-->
+    <p>
+        lorem ipsum dolor first amit consecuter adispiscing elit.
+        Superconductors are materials that exhibit zero electrical resistance and expel magnetic fields when cooled below a specific "critical temperature". This allows electric current to flow indefinitely without energy loss. Common applications include MRI machines, maglev trains, and high-field magnets for fusion research. 
+        <style>
+            main p::first-letter{
+                color:aquamarine: rebeccapurple;
+            }
+            #main p::before{
+                content:"read more";
+                color:aqua;
+                font-size: 40px;
+            }
+        </style> 
+    
+    </p>
+    <a href="">visit my page </a>
+
+</body>
+</html>
