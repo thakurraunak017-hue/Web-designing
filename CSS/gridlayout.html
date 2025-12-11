@@ -5,25 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid Layout</title>
     <style>
-        html,* {
+        html,
+        * {
             margin: 0px;
             padding: 0px;
             box-sizing: border-box;
         }
         main {
             width: 1200px;
-            height:400px ;
-            background-color: blue;
+            height:auto ;
+            background-color: yellowgreen;
             display: grid;
-            /*grid-template-columns: 200px 300px 400px auto;/
-            gap: 20px;
-            grid-template-columns: repeat(4,1fr);
+            grid-template-columns: 200px 300px 400px auto;
+            gap : 20px;
+           /* grid-template-columns: repeat(1,1fr);*/
+            margin:auto;
+            grid-template-rows: 200px 200px;
+            grid-template-columns: repeat(2,1fr);
         }
 
-        .box {
+        .box:nth-child(odd){
             background-color: antiquewhite;
             height: 300px;
         }
+
+        .box:nth-child(even){
+            background-color: red;
+            height: 300px;
+        }
+
+       /* @media  screen and (max-width:768px){
+            main {
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                gap: 20px;
+            }
+        }*/
+        p 
     </style>
     
 </head>
